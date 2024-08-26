@@ -33,10 +33,28 @@ p {
     color: #555;
 }
 
-.countdown {
-    margin-top: 20px;
-    font-size: 24px;
-    color: #FF6347;
+.qr-code {
+    margin: 20px 0;
+}
+
+.qr-image {
+    width: 200px;
+    height: 200px;
+}
+
+.download-button {
+    display: inline-block;
+    background-color: #FF6347;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background-color: #FF4500;
 }
 
 @media (max-width: 600px) {
@@ -56,7 +74,13 @@ p {
         font-size: 16px;
     }
 
-    .countdown {
-        font-size: 20px;
+    .qr-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .download-button {
+        padding: 12px 24px;
+        font-size: 16px;
     }
 }
